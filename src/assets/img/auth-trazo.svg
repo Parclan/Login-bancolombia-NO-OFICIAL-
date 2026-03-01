@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none">
+  <!-- Flecha Bancolombia -->
+  <g transform="translate(0, 6)">
+    <!-- Cuerpo horizontal superior -->
+    <rect x="10" y="0" width="26" height="6" fill="white"/>
+    <!-- Punta de flecha derecha -->
+    <polygon points="36,0 48,9 36,18" fill="white"/>
+    <!-- Cuerpo horizontal inferior -->
+    <rect x="10" y="12" width="26" height="6" fill="white"/>
+  </g>
+  <!-- Texto Bancolombia -->
+  <text x="58" y="33" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="500" fill="white" letter-spacing="0.5">Bancolombia</text>
+</svg>
