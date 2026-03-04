@@ -93,14 +93,13 @@ function LoginCard({ t, theme }) {
 
                 {/* Link olvidaste usuario */}
                 <div className="mb-5">
-                    <a
-                        href="#"
+                    <button
                         className="text-xs"
-                        style={{ color: t.linkColor, textDecoration: "underline" }}
+                        style={{ color: t.linkColor, textDecoration: "underline", background: "none", border: "none", padding: 0, cursor: "pointer" }}
                         onClick={(e) => { e.preventDefault(); setModalUsuario(true); }}
                     >
                         ¿Olvidaste tu usuario?
-                    </a>
+                    </button>
                 </div>
 
                 {/* Campo Clave */}
@@ -118,14 +117,13 @@ function LoginCard({ t, theme }) {
 
                 {/* Link olvidaste clave */}
                 <div className="mb-7 md:mb-8">
-                    <a
-                        href="#"
+                    <button
                         className="text-xs"
-                        style={{ color: t.linkColor, textDecoration: "underline" }}
+                        style={{ color: t.linkColor, textDecoration: "underline", background: "none", border: "none", padding: 0, cursor: "pointer" }}
                         onClick={(e) => { e.preventDefault(); setModalClave(true); }}
                     >
                         ¿Olvidaste o bloqueaste tu clave?
-                    </a>
+                    </button>
                 </div>
 
                 {/* Botón Iniciar sesión */}
@@ -148,9 +146,13 @@ function LoginCard({ t, theme }) {
 
                 {/* Crear usuario */}
                 <div className="text-center mt-5">
-                    <a href="#" className="text-sm" style={{ color: t.greeting, textDecoration: "underline" }}>
+                    <button
+                        className="text-sm"
+                        style={{ color: t.greeting, textDecoration: "underline", background: "none", border: "none", padding: 0, cursor: "pointer" }}
+                        onClick={(e) => e.preventDefault()}
+                    >
                         Crear usuario
-                    </a>
+                    </button>
                 </div>
             </div>
 

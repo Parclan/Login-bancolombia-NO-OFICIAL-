@@ -19,7 +19,7 @@ export default function BancolombiaLogin() {
     >
       {/* ── SILEO TOASTER ── */}
       <Toaster
-        position="top-right"
+        position="top-center"
         options={{
           fill: theme === "dark" ? "#3a3a3a" : "#ffffff",
           styles: {

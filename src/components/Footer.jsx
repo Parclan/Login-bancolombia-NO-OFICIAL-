@@ -20,9 +20,13 @@ function Footer({ t, fechaHora }) {
             >
                 {footerLinks.map((link, i) => (
                     <span key={link} className="flex items-center gap-4">
-                        <a href="#" className="hover:opacity-100 transition-opacity" style={{ color: t.footerText }}>
+                        <button
+                            className="hover:opacity-100 transition-opacity"
+                            style={{ color: t.footerText, background: "none", border: "none", padding: 0, cursor: "pointer", fontSize: "inherit" }}
+                            onClick={(e) => e.preventDefault()}
+                        >
                             {link}
-                        </a>
+                        </button>
                         {i < 3 && <span style={{ color: t.footerDot }}>·</span>}
                     </span>
                 ))}
