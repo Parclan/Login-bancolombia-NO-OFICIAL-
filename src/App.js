@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './App.css';
 import auth_trazo from "./assets/img/auth-trazo.svg";
 import { Toaster } from "sileo";
@@ -12,6 +13,11 @@ export default function BancolombiaLogin() {
   const { t, theme } = useTheme();
   const fechaHora = useClock();
 
+  useEffect(() => {
+    document.body.style.backgroundColor = t.bg;
+    document.body.style.transition = "background-color 0.3s";
+  }, [t.bg]);
+
   return (
     <div
       className="min-h-screen flex flex-col relative overflow-hidden"
@@ -21,11 +27,10 @@ export default function BancolombiaLogin() {
       <Toaster
         position="top-center"
         options={{
-          fill: theme === "dark" ? "#3a3a3a" : "#ffffff",
+          fill: theme === "dark" ? "#ffffff" : "#3a3a3a",
           styles: {
-            title: theme === "dark" ? "text-white!" : "text-gray-900!",
-            description: theme === "dark" ? "text-white/70!" : "text-gray-500!",
-            badge: theme === "dark" ? "bg-white/15!" : "bg-black/8!",
+            description: theme === "dark" ? "!text-gray-900" : "!text-white",
+            badge: theme === "dark" ? "!bg-black/10" : "!bg-white/20",
           },
         }}
       />
